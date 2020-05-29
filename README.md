@@ -5,7 +5,7 @@
 
 ![My image](https://github.com/collabnix/terraform/blob/master/images/wordle.png)
 
-Terraform Labs brings you tutorials that help you get hands-on experience using Terraform, Docker & Kubernetes. Here you will find complete documentation of labs and tutorials that will help you, no matter if you are a beginner, SysAdmin, IT Pro or Developer. Yes, you read it right ! Its $0 learning platform. 
+Terraform Labs brings you tutorials that help you get hands-on experience using Terraform, Kubernetes & Cloud. Here you will find complete documentation of labs and tutorials around Terraform CLI, Configuration Language, sub-commands, providers, Registry and much more..
 
 #  Getting Started in 3 Simple Steps
 
