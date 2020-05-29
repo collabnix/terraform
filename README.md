@@ -3,7 +3,7 @@
 
 
 
-![My image](https://raw.githubusercontent.com/collabnix/terraform/master/images/dockerlabs.jpeg)
+![My image](https://github.com/collabnix/terraform/blob/master/images/wordle.png)
 
 Terraform Labs brings you tutorials that help you get hands-on experience using Terraform, Docker & Kubernetes. Here you will find complete documentation of labs and tutorials that will help you, no matter if you are a beginner, SysAdmin, IT Pro or Developer. Yes, you read it right ! Its $0 learning platform. 
 
