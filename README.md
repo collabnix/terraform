@@ -17,7 +17,7 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 # Terraform Workshop/Labs
 
-- [Getting Started: Why, What & How about Terraform?]()
+- [Getting Started: Why, What & How about Terraform?]() - In-Progress
 
 - [Beginners Track]() - In-Progress
 
