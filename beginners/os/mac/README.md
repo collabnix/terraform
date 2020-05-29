@@ -37,7 +37,7 @@ $ terraform -help plan
 
 If you get an error that terraform could not be found, your PATH environment variable was not set up properly. Please go back and ensure that your PATH variable contains the directory where Terraform was installed.
 
-##Enable tab completion
+## Enable tab completion
 
 If you use either bash or zsh you can enable tab completion for Terraform commands. To enable autocomplete, run the following command and then restart your shell.
 
