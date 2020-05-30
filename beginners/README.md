@@ -30,7 +30,8 @@
 
 #### Azure
 
-- Create Resource Group
+- Getting started with Terraform in Azure
+- [Create a Virtual Network in Azure](https://github.com/collabnix/terraform/blob/master/beginners/azure/virtualnetwork/README.md)
 
 ### GCP
 
