@@ -7,12 +7,12 @@
 - [Windows]()
 - [Raspberry Pi]()
 
-## From Init To Apply
+## From Terraform INIT To APPLY
 
-- What are terraform providers ?
-- What are terraform resources ?
-- What are variable resources in terraform ?
-- What are output resources in terraform ?
+- Terraform providers 
+- Terraform resources 
+- Variable Resources 
+- Output Resources 
 - Init-plan-apply !
 
 ## Setting up Cloud Account
