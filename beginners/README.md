@@ -30,7 +30,7 @@
 
 #### Azure
 
-- Getting started with Terraform in Azure
+- [Getting started with Terraform in Azure](https://github.com/collabnix/terraform/blob/master/beginners/azure/README.md)
 - [Create a Virtual Network in Azure](https://github.com/collabnix/terraform/blob/master/beginners/azure/virtualnetwork/README.md)
 
 ### GCP
