@@ -9,10 +9,10 @@
 
 ## From Terraform INIT To APPLY
 
-- Terraform providers 
-- Terraform resources 
-- Variable Resources 
-- Output Resources 
+- [Terraform providers](https://github.com/collabnix/terraform/blob/master/beginners/providers/README.md)
+- [Terraform resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/README.md)
+- [Variable Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/variables/README.md)
+- [Output Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/output/README.md)
 - Init-plan-apply !
 
 ## Setting up Cloud Account
