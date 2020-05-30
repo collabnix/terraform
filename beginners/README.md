@@ -7,7 +7,9 @@
 - [Windows]()
 - [Raspberry Pi]()
 
-## Setting up AWS Account
+## Setting up Cloud Account
+
+### AWS
 
 - Deploy a Single Server
 - Deploy a Single Web Server
