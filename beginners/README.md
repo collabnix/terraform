@@ -32,6 +32,10 @@
 
 - Create Resource Group
 
+### GCP
+
+- TBD
+- TBD
 
 ## Managing Terraform State
 
