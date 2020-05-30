@@ -9,7 +9,7 @@
 
 ## Setting up Cloud Account
 
-### AWS/GCP/Azure/DO
+#### AWS/GCP/Azure/DO
 
 - Deploy a Single Server
 - Deploy a Single Web Server
