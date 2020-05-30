@@ -17,7 +17,7 @@
 
 ## Setting up Cloud Account
 
-#### AWS/GCP/Azure/DO
+#### AWS
 
 - Deploy a Single Server
 - Deploy a Single Web Server
@@ -27,6 +27,11 @@
 - Cleaning Up
 - Deploy a subnet in VPC with security groups/firewall rules
 - Create Storage Buckets
+
+#### Azure
+
+- Create Resource Group
+
 
 ## Managing Terraform State
 
