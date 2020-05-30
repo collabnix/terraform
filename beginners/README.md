@@ -13,7 +13,7 @@
 - [Terraform resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/README.md)
 - [Variable Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/variables/README.md)
 - [Output Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/output/README.md)
-- Init-plan-apply !
+- [Init-plan-apply !](https://github.com/collabnix/terraform/blob/master/beginners/init-plan-apply/README.md)
 
 ## Setting up Cloud Account
 
