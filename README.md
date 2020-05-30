@@ -17,13 +17,13 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 # Terraform Workshop/Labs
 
-- [Getting Started: Why, What & How about Terraform?]() - In-Progress
+- [Getting Started: Why, What & How about Terraform?]() - Not Started
 
 - [Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - In-Progress
 
-- [Intermediate Track](https://github.com/collabnix/terraform/blob/master/intermediate/README.md) - In-Progress
+- [Intermediate Track](https://github.com/collabnix/terraform/blob/master/intermediate/README.md) - Not Started
 
-- [Experts Track](https://github.com/collabnix/terraform/blob/master/experts/README.md) - In-Progress
+- [Experts Track](https://github.com/collabnix/terraform/blob/master/experts/README.md) - Not Started
 
 
 # Terraform Associate Certification
