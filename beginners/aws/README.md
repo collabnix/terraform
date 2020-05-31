@@ -13,7 +13,7 @@ The purpose of this tutorial is to create an EKS cluster with Terraform. Amazon 
 brew install terraform
 ```
 
-If you're running Terraform 0.11, I would suggest to upgrade it to 1.12 for smooth operations.
+If you're running Terraform 0.11, I would suggest to upgrade it to 0.12 ASAP.
 
 
 - Install AWSCLI 2.0.17
@@ -45,7 +45,7 @@ brew install kubernetes-cli
 
 The first thing to set up is your Terraform. We will create an AWS IAM users for Terraform.
 
-In your AWS console, go to the IAM section and create a user named “Sudoaccess”. Then add your user to a group named “SudoAccessGroup”. 
+In your AWS console, go to the IAM section and create a user named “FullAccess”. Then add your user to a group named “FullAccessGroup”. 
 Attaches to this group the following rights:
 
 - AdministratorAccess
@@ -192,4 +192,19 @@ Then to fix it , you need to update your Terraform version by running
 ```
 brew upgrade terraform
 ```
+
+
+## Configure kubectl
+
+Now that you've provisioned your EKS cluster, you need to configure kubectl. Customize the following command with your cluster name and region, the values from Terraform's output. It will get the access credentials for your cluster and automatically configure kubectl.
+
+
+```
+aws eks --region us-east-2 update-kubeconfig --name training-eks-9Vir2IUu
+```
+
+```
+Added new context arn:aws:eks:us-east-2:125346028423:cluster/training-eks-9Vir2IUu to /Users/ajeetraina/.kube/
+```
+
 
