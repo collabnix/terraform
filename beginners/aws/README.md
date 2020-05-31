@@ -19,6 +19,25 @@ brew install terraform
 brew install awscli
 ```
 
+- Install AWS IAM Authenticator
+
+```
+brew install aws-iam-authenticator
+```
+
+- Install WGET
+
+```
+brew install wget
+```
+
+- Install Kubectl
+
+```
+brew install kubernetes-cli
+```
+
+
 ## Setting up AWS IAM users for Terraform
 
 The first thing to set up is your Terraform. We will create an AWS IAM users for Terraform.
