@@ -45,7 +45,7 @@ brew install kubernetes-cli
 
 The first thing to set up is your Terraform. We will create an AWS IAM users for Terraform.
 
-In your AWS console, go to the IAM section and create a user named “FullAccess”. Then add your user to a group named “FullAccessGroup”. 
+In your AWS console, go to the IAM section and create a user named “Sudoaccess”. Then add your user to a group named “SudoAccessGroup”. 
 Attaches to this group the following rights:
 
 - AdministratorAccess
