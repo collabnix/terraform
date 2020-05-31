@@ -21,7 +21,7 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 - [Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - In-Progress
 
-- [Intermediate Track](https://github.com/collabnix/terraform/blob/master/intermediate/README.md) - Not Started
+- [Intermediate Track](https://github.com/collabnix/terraform/blob/master/intermediate/README.md) - In-Progress
 
 - [Experts Track](https://github.com/collabnix/terraform/blob/master/experts/README.md) - Not Started
 
