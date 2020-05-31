@@ -13,7 +13,7 @@ The purpose of this tutorial is to create an EKS cluster with Terraform. Amazon 
 brew install terraform
 ```
 
-If you're running Terraform 1.11 
+If you're running Terraform 1.11, I would suggest to upgrade it to 1.12 for smooth operations.
 
 
 - Install AWSCLI 2.0.17
