@@ -18,4 +18,4 @@ Following are the key features of Terraform:
 
 ***
 
-[< Previous](iac.md) [Next >](use-cases.md)
+[< Previous](iac.md) | [Next >](use-cases.md)

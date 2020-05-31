@@ -14,4 +14,4 @@ All combined these benefits make IaC a staple in DevOps practices.
 
 ***
 
-[< Previous](the-problem.md) [Next >](terraform.md)
+[< Previous](the-problem.md) | [Next >](terraform.md)
