@@ -20,8 +20,6 @@
 
 #### AWS
 
-- [Setting up EKS Cluster using Terraform](https://github.com/collabnix/terraform/blob/master/beginners/aws/README.md)
-
 - Setting up AWS account credentials 
 - Launch an EC2 instance
 - Create a S3 bucket for storage
