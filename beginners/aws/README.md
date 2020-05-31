@@ -45,7 +45,7 @@ brew install kubernetes-cli
 
 The first thing to set up is your Terraform. We will create an AWS IAM users for Terraform.
 
-In your AWS console, go to the IAM section and create a user named “FullAccess”. Then add your user to a group named “FullAccessGroup”. 
+In your AWS console, go to the IAM section and create a user named “SudoAccess”. Then add your user to a group named “SudoAccessGroup”. 
 Attaches to this group the following rights:
 
 - AdministratorAccess
@@ -100,9 +100,6 @@ In here, you will find six files used to provision a VPC, security groups and an
 
 ## Initialize Terraform workspace
 
-```
-terraform init
-```
 
 ```
 [Captains-Bay]🚩 >  terraform init
@@ -151,7 +148,7 @@ kind: Config
 clusters:
 - cluster:
     server: https://83AEAE7D9A99A68DFA4162E18F4AD470.gr7.us-east-2.eks.amazonaws.com
-    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EVXpNVEV5TWpNME1Wb1hEVE13TURVeU9URXlNak0wTVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTHdvCnRQVlNBcjFpUFZDNmNEMklKNE9oSjgvTFJnbDY0WlpYRkpKblNVRTNJRkNRemt5VWMzaUp6OC9jVjhXUC9XaHYKK3JuQit1c0NOb0VjanFUbVQ5S3VEb0krQm5CQk5VM29ob1llV0RudVRrdU5Ydkd3L0V5d1RKeUNkeXFObWljVQpqTFljbTFNQ0VrQ3FOaFlBVm9GSUVPNkJqekFqb1dXMGFvNHVGdzVNUTNFSVRzMUcwVmFDOEVhNW9qYXVzVmplCnl1SkZ5VWxzZ29TcTRINFdzaS9XRjVnMGdHVHR1UmZmdEwxQzFSYzNsalR4NFlOY29Ncks4T1RpWjVqTFdNc1AKMzk2L3I4WnNhRjVoeVdyckJJb3JwcEUzZWJRU242S0NpaFQyZytBSjd0VS9ZQmZURmNFVzcxNlBBZ0l0MnZFQgpxWjl2OFdxSXNyVWoybERIdUM4Q0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFLSDc3RmlZME5oNmp6ckg5bzh3ODc3U2NkN2IKRjl1MWtWWXV4QXVXdDlIYmRqcHhKRWZteUdIOTBTMGZUbjFZV2R2WllNTG1Jd3dPNEluV0xiYXlTN3hQM3JmdAp2Z0ZqV3VNUE4veE43WWswRGNHcW4yTmV6VG1hNXl4VVI3RXlyM2NKeUg4eFZWTjJoSEFibzVlTGljV0JjSC9MCnZUcEN2c1ZmanlkYmYxdGVmV0hXRXhsZ1prL01TSEt4R3BWdGthTFFvZ0NUVE51dzV1SzZNQ2FBM3FoeVNOTXMKc1pLVGMxSXhRQnNWdFVvZjRPNHhGZnd0aHM0Vk9zVEZmSEY4bHdnSnpwWEVEanlhRTJ1MnV4OHVnUnN1Y3RhMQpNWkFneVVBS1hma1pQV2d4OXBWdWFOMHkzeE02ZTdTaUtYNFpTNmhFQzcyK1hrK29Na2tsSlFlQ0J3TT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EVXpNVEV5TWpNME1Wb1hEVE13TURVeU9URXlNak0wTVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFXXXXXXXXXXXXcEN2c1ZmanlkYmYxdGVmV0hXRXhsZ1prL01TSEt4R3BWdGthTFFvZ0NUVE51dzV1SzZNQ2FBM3FoeVNOTXMKc1pLVGMxSXhRQnNWdFVvZjRPNHhGZnd0aHM0Vk9zVEZmSEY4bHdnSnpwWEVEanlhRTJ1MnV4OHVnUnN1Y3RhMQpNWkFneVVBS1hma1pQV2d4OXBWdWFOMHkzeE02ZTdTaUtYNFpTNmhFQzcyK1hrK29Na2tsSlFlQ0J3TT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
   name: eks_training-eks-9Vir2IUu
 
 contexts:
@@ -175,6 +172,18 @@ users:
 region = us-east-2
 ```
 
+## Configure kubectl
+
+Now that you've provisioned your EKS cluster, you need to configure kubectl. Customize the following command with your cluster name and region, the values from Terraform's output. It will get the access credentials for your cluster and automatically configure kubectl.
+
+
+```
+aws eks --region us-east-2 update-kubeconfig --name training-eks-9Vir2IUu
+```
+
+```
+Added new context arn:aws:eks:us-east-2:125346028423:cluster/training-eks-9Vir2IUu to /Users/ajeetraina/.kube/
+```
 
 
 ## Troubleshooting:
@@ -194,17 +203,6 @@ brew upgrade terraform
 ```
 
 
-## Configure kubectl
 
-Now that you've provisioned your EKS cluster, you need to configure kubectl. Customize the following command with your cluster name and region, the values from Terraform's output. It will get the access credentials for your cluster and automatically configure kubectl.
-
-
-```
-aws eks --region us-east-2 update-kubeconfig --name training-eks-9Vir2IUu
-```
-
-```
-Added new context arn:aws:eks:us-east-2:125346028423:cluster/training-eks-9Vir2IUu to /Users/ajeetraina/.kube/
-```
 
 
