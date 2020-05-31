@@ -49,14 +49,29 @@ cat config
 region=us-east-2
 ```
 
-## Creating Provider.tf file
+## Cloning the Repository
 
 ```
-provider "aws" {
-   profile    = "default"
-   region     = "us-east-2"
- }
+git clone https://github.com/hashicorp/learn-terraform-provision-eks-cluster
 ```
 
-## Creating all Resource you require
+You can explore this repository by changing directories or navigating in your UI.
 
+```
+$ cd learn-terraform-provision-eks-cluster
+```
+
+In here, you will find six files used to provision a VPC, security groups and an EKS cluster. The final product should be similar to this:
+
+
+- vpc.tf provisions a VPC, subnets and availability zones using the AWS VPC Module. A new VPC is created for this guide so it doesn't impact your existing cloud environment and resources.
+
+- security-groups.tf provisions the security groups used by the EKS cluster.
+
+- eks-cluster.tf provisions all the resources (AutoScaling Groups, etc...) required to set up an EKS cluster in the private subnets and bastion servers to access the cluster using the AWS EKS Module.
+
+- On line 14, the AutoScaling group configuration contains three nodes.
+
+- outputs.tf defines the output configuration.
+
+- versions.tf sets the Terraform version to at least 0.12. It also sets versions for the providers used in this sample.
