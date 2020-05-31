@@ -136,6 +136,45 @@ commands will detect it and remind you to do so if necessary.
 [Captains-Bay]🚩 >
 ```
 
+```
+Apply complete! Resources: 51 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+cluster_endpoint = https://83AEAE7D9A99A68DFA4162E18F4AD470.gr7.us-east-2.eks.amazonaws.com
+cluster_name = training-eks-9Vir2IUu
+cluster_security_group_id = sg-000e8af737c088047
+kubectl_config = apiVersion: v1
+preferences: {}
+kind: Config
+
+clusters:
+- cluster:
+    server: https://83AEAE7D9A99A68DFA4162E18F4AD470.gr7.us-east-2.eks.amazonaws.com
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EVXpNVEV5TWpNME1Wb1hEVE13TURVeU9URXlNak0wTVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTHdvCnRQVlNBcjFpUFZDNmNEMklKNE9oSjgvTFJnbDY0WlpYRkpKblNVRTNJRkNRemt5VWMzaUp6OC9jVjhXUC9XaHYKK3JuQit1c0NOb0VjanFUbVQ5S3VEb0krQm5CQk5VM29ob1llV0RudVRrdU5Ydkd3L0V5d1RKeUNkeXFObWljVQpqTFljbTFNQ0VrQ3FOaFlBVm9GSUVPNkJqekFqb1dXMGFvNHVGdzVNUTNFSVRzMUcwVmFDOEVhNW9qYXVzVmplCnl1SkZ5VWxzZ29TcTRINFdzaS9XRjVnMGdHVHR1UmZmdEwxQzFSYzNsalR4NFlOY29Ncks4T1RpWjVqTFdNc1AKMzk2L3I4WnNhRjVoeVdyckJJb3JwcEUzZWJRU242S0NpaFQyZytBSjd0VS9ZQmZURmNFVzcxNlBBZ0l0MnZFQgpxWjl2OFdxSXNyVWoybERIdUM4Q0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFLSDc3RmlZME5oNmp6ckg5bzh3ODc3U2NkN2IKRjl1MWtWWXV4QXVXdDlIYmRqcHhKRWZteUdIOTBTMGZUbjFZV2R2WllNTG1Jd3dPNEluV0xiYXlTN3hQM3JmdAp2Z0ZqV3VNUE4veE43WWswRGNHcW4yTmV6VG1hNXl4VVI3RXlyM2NKeUg4eFZWTjJoSEFibzVlTGljV0JjSC9MCnZUcEN2c1ZmanlkYmYxdGVmV0hXRXhsZ1prL01TSEt4R3BWdGthTFFvZ0NUVE51dzV1SzZNQ2FBM3FoeVNOTXMKc1pLVGMxSXhRQnNWdFVvZjRPNHhGZnd0aHM0Vk9zVEZmSEY4bHdnSnpwWEVEanlhRTJ1MnV4OHVnUnN1Y3RhMQpNWkFneVVBS1hma1pQV2d4OXBWdWFOMHkzeE02ZTdTaUtYNFpTNmhFQzcyK1hrK29Na2tsSlFlQ0J3TT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+  name: eks_training-eks-9Vir2IUu
+
+contexts:
+- context:
+    cluster: eks_training-eks-9Vir2IUu
+    user: eks_training-eks-9Vir2IUu
+  name: eks_training-eks-9Vir2IUu
+
+current-context: eks_training-eks-9Vir2IUu
+
+users:
+- name: eks_training-eks-9Vir2IUu
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      command: aws-iam-authenticator
+      args:
+        - "token"
+        - "-i"
+        - "training-eks-9Vir2IUu"
+region = us-east-2
+```
+
 
 
 ## Troubleshooting:
