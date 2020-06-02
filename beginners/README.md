@@ -35,7 +35,11 @@
 #### Azure
 
 - [Getting started with Terraform in Azure](https://github.com/collabnix/terraform/blob/master/beginners/azure/README.md)
-- [Create a Virtual Network in Azure](https://github.com/collabnix/terraform/blob/master/beginners/azure/virtualnetwork/README.md)
+- [Create a Virtual Network in Azure](https://github.com/collabnix/terraform/blob/master/beginners/azure/virtualnetwork)
+- [Create a Linux Virtual Machine in Azure](https://github.com/collabnix/terraform/tree/master/beginners/azure/linuxVM)
+- [Create a Windows-10 Virtual Machine in Azure](https://github.com/collabnix/terraform/tree/master/beginners/azure/windowsVM)
+- [Create a Storage account in Azure](https://github.com/collabnix/terraform/tree/master/beginners/azure/storageAccount) - In Progress
+
 
 ### GCP
 
