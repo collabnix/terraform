@@ -9,7 +9,7 @@ $ wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_
 Then unzip the archieve,
 
 ```
-$ unzip terraform_0.12.26_windows_amd64.zip
+$ unzip terraform_0.12.26_linux_amd64.zip
 ```
 
 Check the executable permission on the binary, if it's not executable, make it executable using the below commmand,
