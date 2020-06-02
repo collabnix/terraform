@@ -3,7 +3,7 @@
 A binary distribution is avaialble for all environments. Let's grab the latest version of it for linux.
 
 ```
-$ wget thttps://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+$ wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
 ```
 
 Then unzip the archieve,
