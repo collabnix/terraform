@@ -43,8 +43,12 @@
 
 ### GCP
 
-- Launch a VM
-- TBD
+- Terraform vs Google Deployment Manager
+- Launch a Compute Engine Instance
+- Create a New VPC and Public Subnet
+- Auto Scale and Load Balance the Managed Instance Groups
+- Deploy a web server
+- Cleaning Up
 
 ## Managing Terraform State
 
