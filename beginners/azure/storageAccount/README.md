@@ -1,6 +1,6 @@
-# Create a Storage account in Azure with Terraform
+# Create a Static Website on Azure Storage account with Terraform
 
-**This module creates a Storage account in Azure**
+**This module creates a Storage account in Azure and hosts a static website**
 
 > Note 1: This deployment is not free. If you are not on a free trail, it will incur a very small fee. So, its always a good practice to cleanup everything when you are done with the demo.
 
@@ -18,6 +18,14 @@ Click [Here](https://github.com/collabnix/terraform/blob/master/beginners/azure/
 - *$ cd beginners/azure/storageAccount* 
 
 > Make sure you are in this directory. This is the directory from where we run terraform commands.
+
+After the storage account is created, copy the url from the output, paste it in a browser. You should see the below page
+
+![success](https://github.com/collabnix/terraform/beginners/azure/storageAccount/images/success.png)
+
+If you want to see the error page, append /error to the url.
+
+![error](https://github.com/collabnix/terraform/beginners/azure/storageAccount/images/error.png)
 
 ## After the deployment
 
