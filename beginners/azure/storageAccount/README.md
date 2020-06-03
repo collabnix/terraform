@@ -19,13 +19,17 @@ Click [Here](https://github.com/collabnix/terraform/blob/master/beginners/azure/
 
 > Make sure you are in this directory. This is the directory from where we run terraform commands.
 
-After the storage account is created, copy the url from the output, paste it in a browser. You should see the below page
+- After the storage account is created, copy the url from the output, paste it in a browser. You should see the below page
 
-![success](https://github.com/collabnix/terraform/beginners/azure/storageAccount/images/success.png)
 
-If you want to see the error page, append /error to the url.
 
-![error](https://github.com/collabnix/terraform/beginners/azure/storageAccount/images/error.png)
+![Success](https://github.com/collabnix/terraform/blob/master/images/Azure_staticwebsite_Success.png)
+
+- If you want to see the error page, append /error to the url.
+
+
+
+![Error](https://github.com/collabnix/terraform/blob/master/images/Azure_staticwebsite_Error.png)
 
 ## After the deployment
 
