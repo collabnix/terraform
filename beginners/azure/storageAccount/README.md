@@ -29,7 +29,6 @@ Click [Here](https://github.com/collabnix/terraform/blob/master/beginners/azure/
 
 
 
-
 ![Error](https://github.com/collabnix/terraform/blob/master/images/Azure_staticwebsite_Error.png)
 
 
