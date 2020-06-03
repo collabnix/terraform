@@ -17,7 +17,6 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "webserver" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
-  subnet_id = var.public_subnet
   key_name = var.key_pair_name
 
   network_interface {
