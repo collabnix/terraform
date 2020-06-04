@@ -39,6 +39,13 @@ In order to avoid explicitly using the GCP service key, we are going to use GOOG
 
 Add the necessary values of the variables in terraform.tfvars file
 
+```
+gcp_project_id="<project-id>"
+gcp_project_location="<region>"
+gcp_compute_zone="<zone>"
+machine_type="<machine-type>"
+```
+
 ### Terraform Init
 
 This command will all the providers for you that are required to create your resource in GCP
