@@ -18,6 +18,8 @@ resource "google_compute_instance" "nginx" {
   # A startup script that will run on our os and setup a nginx server for us
   metadata_startup_script = "sudo apt-get update; sudo apt-get install nginx-light -y"
 
+  # Allows traffic @ PORT 80. It is recommended to use custom vpc and subnets with firewalls rules
+  tags = ["http-server"]
 
   # Block where you can configure your vpc and subnets
   network_interface {
