@@ -1,17 +1,17 @@
 ## Create a Google compute instance in GCP
 
-In this particular track, we are going to build a google compute instance using terrform.
-We will be binding an instance with a static compute address and we'll also see how we can
-attach service account/ scope on a virtual machine. We will also install a nginx server on our instance and we'll also allow traffic at Port 80 using http-server tags.
+In this particular track, we are going to build a google cloud vpc using terrform.
+We will be binding an instance of VPC with a subnet and firewall rules.
 
-
-Add the necessary values of the variables in terraform.tfvars file
+Add the necessary values of the variables in terraform.tfvars file or pass them as variables if you are using it as a module
 
 ```
+vpc_name="<vpc-name>"
+subnet_name="<subnet-name>"
 gcp_project_id="<project-id>"
-gcp_project_location="<region>"
-gcp_compute_zone="<zone>"
-machine_type="<machine-type>"
+gcp_project_location="gcp-region"
+ip_cidr_range="10.1.0.0/24"
+ingress_ports=[80, 22, 8080]
 ```
 
 ### Terraform Init
@@ -19,7 +19,7 @@ machine_type="<machine-type>"
 This command will all the providers for you that are required to create your resource in GCP
 
 ```bash
-cd virtual-machine
+cd vpc
 terraform init
 ```
 
@@ -30,7 +30,7 @@ The CDN which servers the providers is quite slow that's why it can take some ti
 This command will layout a plan for you and show you what all resources can be created
 
 ```bash
-cd virtual-machine
+cd vpc
 terraform plan
 ```
 
@@ -39,7 +39,7 @@ terraform plan
 This command will create all the mentioned resources for yor
 
 ```bash
-cd virtual-machine
+cd vpc
 terraform apply
 ```
 
@@ -52,9 +52,10 @@ Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
 
 Outputs:
 
-disk_name = disk-2a7c7a928746e7a6
-instance_name = vm-2a7c7a928746e7a6
-public_address = 34.87.216.228
-```
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 
-Now if you will head over to the public address you should see nginx welcome page.
+Outputs:
+
+subnet_name = subnetes
+vpc_name = vpcs
+```
