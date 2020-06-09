@@ -40,6 +40,7 @@
 - [Create a Windows-10 Virtual Machine in Azure](https://github.com/collabnix/terraform/tree/master/beginners/azure/windowsVM)
 - [Create a Storage account and Host a static website in Azure](https://github.com/collabnix/terraform/tree/master/beginners/azure/storageAccount)
 - [Create Multiple Resources in Azure using for_each](https://github.com/collabnix/terraform/tree/master/beginners/azure/multiple_resources) 
+- [How to use Modules](https://github.com/collabnix/terraform/tree/master/beginners/azure/module_example)
 
 ### GCP
 
