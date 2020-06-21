@@ -1,0 +1,176 @@
+abs-output = {
+  "float" = 13.25
+  "negative" = 482
+  "positive" = 13
+  "zero" = 0
+}
+abspath-output = /Users/Vamsi/Desktop/Terraform/terraform/intermediate/Terraform-Functions
+ceil-output = {
+  "op1" = 13
+  "op2" = 13
+  "op3" = 14
+  "op4" = 14
+}
+cidrhost-output = {
+  "IP1" = "10.0.0.8"
+  "IP2" = "10.0.1.0"
+  "IP3" = "10.0.1.12"
+}
+cidrsubnet-output = {
+  "App-Subnet" = "10.0.2.0/24"
+  "DB-Subnet" = "10.0.3.0/24"
+  "Web-Subnet" = "10.0.1.0/24"
+}
+cidrsubnets-output = {
+  "Dev-Subnets" = [
+    "10.0.0.0/24",
+    "10.0.1.0/24",
+    "10.0.2.0/24",
+    "10.0.3.0/24",
+  ]
+  "Prod-Subnets" = [
+    "10.0.0.0/20",
+    "10.0.16.0/20",
+    "10.0.32.0/24",
+    "10.0.48.0/20",
+  ]
+}
+concat-output = [
+  "collbnix",
+  "is",
+  "an",
+  "awesome",
+  "group",
+]
+distinct-output = [
+  "aws",
+  "azure",
+  "gcp",
+  "k8s",
+]
+element-output = {
+  "0" = "collabnix"
+  "1" = "aws"
+  "2" = "azure"
+  "3" = "gcp"
+  "4" = "k8s"
+}
+file-output = # Output of file function
+Collabnix Rocks !!!
+fileexists-output = {
+  "Doesnt_Exist" = false
+  "Exists" = true
+}
+floor-output = {
+  "op1" = 13
+  "op2" = 13
+  "op3" = 13
+  "op4" = 13
+}
+join-output = collabnix-terraform-aws-azure-gpc
+length-output = {
+  "length-list" = 5
+  "length-map" = 3
+  "length-null" = 0
+  "length-string" = 9
+}
+log-output = {
+  "op1" = 3.3219280948873626
+  "op2" = 2
+}
+lookup-output = {
+  "Key_Doesnt_Exist" = "GettingBetter"
+  "Key_Exists" = "Better"
+}
+lower-output = collabnix
+max-output = 1325
+min-output = 13
+pathexpand-output = /Users/Vamsi/file1.txt
+pow-output = {
+  "op1" = 169
+  "op2" = 1
+  "op3" = 0
+  "op4" = 1
+}
+replace-output = us-west-1
+setproduct-output = [
+  [
+    "Aws",
+    "Certified",
+    "Associate",
+  ],
+  [
+    "Aws",
+    "Certified",
+    "Professional",
+  ],
+  [
+    "Azure",
+    "Certified",
+    "Associate",
+  ],
+  [
+    "Azure",
+    "Certified",
+    "Professional",
+  ],
+  [
+    "Gcp",
+    "Certified",
+    "Associate",
+  ],
+  [
+    "Gcp",
+    "Certified",
+    "Professional",
+  ],
+]
+signum-output = {
+  "op1" = 0
+  "op2" = 1
+  "op3" = -1
+}
+slice-output = [
+  "terraform",
+  "aws",
+  "azure",
+]
+sort-outputs = {
+  "sort-list1" = [
+    "aws",
+    "azure",
+    "collabnix",
+    "gpc",
+    "terraform",
+  ]
+  "sort-list3" = [
+    "13",
+    "19",
+    "25",
+    "27",
+    "482",
+  ]
+  "sort_list2" = [
+    "",
+    "a",
+    "b",
+    "c",
+    "d",
+  ]
+}
+split-output = [
+  "collabnix",
+  "terraform",
+  "aws",
+  "azure",
+  "gpc",
+]
+substr-output = oll
+templatefile-output = Ip Address with port
+10.0.10.0:443
+upper-output = COLLABNIX
+zipmap-output = {
+  "Aws" = 1
+  "Azure" = 2
+  "Gcp" = 3
+}
