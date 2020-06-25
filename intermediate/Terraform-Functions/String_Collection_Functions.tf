@@ -30,6 +30,7 @@ output "lower-output" {
 
 variable "upper_var" {
     description     =   "Example of upper function in Terraform"
+    type            =   string
     default         =   "collabnix"
 }
 
@@ -47,6 +48,7 @@ output "upper-output" {
 
 variable "split_var" {
     description     =   "Example of split function in Terraform"
+    type            =   string
     default         =   "collabnix,terraform,aws,azure,gpc"
 }
 
@@ -64,6 +66,7 @@ output "split-output" {
 
 variable "replace_var" {
     description     =   "Example of replace function in Terraform"
+    type            =   string
     default         =   "us-east-1"
 }
 
@@ -81,6 +84,7 @@ output "replace-output" {
 
 variable "substr_var" {
     description     =   "Example of replace function in Terraform"
+    type            =   string
     default         =   "collabnix"
 }
 
@@ -99,11 +103,13 @@ output "substr-output" {
 
 variable "list1" {
     description     =   "Example of concat function in Terraform"
+    type            =   list(string)
     default         =   ["collbnix","is"]
 }
 
 variable "list2" {
     description     =   "Example of concat function in Terraform"
+    type            =   list(string)
     default         =   ["an","awesome","group"]
 }
 
@@ -122,6 +128,7 @@ output "concat-output" {
 
 variable "distinct_var" {
     description     =   "Example of distinct function in Terraform"
+    type            =   list(string)
     default         =   ["aws","aws","azure","gcp","aws","azure","k8s"]
 }
 
@@ -139,6 +146,7 @@ output "distinct-output" {
 
 variable "element_var" {
     description     =   "Example of element function in Terraform"
+    type            =   list(string)
     default         =   ["collabnix", "aws", "azure", "gcp", "k8s"]
 }
 
@@ -162,6 +170,7 @@ output "element-output" {
 
 variable "join_list" {
     description     =   "Example of join function in Terraform"
+    type            =   list(string)
     default         =   ["collabnix","terraform","aws","azure","gpc"]
 }
 
@@ -179,16 +188,19 @@ output "join-output" {
 
 variable "length_str" {
     description     =   "Example of length of a string"
+    type            =   string
     default         =   "Collabnix"
 }
 
 variable "length_list" {
     description     =   "Example of length of a list"
+    type            =   list(string)
     default         =   ["collabnix","terraform","aws","azure","gpc"]
 }
 
 variable "length_map" { 
     description     =   "Example of length of a map"
+    type            =   map(string)
     default = {
         "aws"       =   1
         "azure"     =   2
@@ -198,6 +210,7 @@ variable "length_map" {
 
 variable "length_null" {
     description     =   "Example of length of a null string"
+    type            =   string
     default         =   ""
 }
 
@@ -221,6 +234,7 @@ output "length-output" {
 
 variable "slice_var" {
     description     =   "Example of Slice function in Terraform"
+    type            =   list(string)
     default         =   ["collabnix","terraform","aws","azure","gpc"]
 }
 
@@ -237,16 +251,19 @@ output "slice-output" {
 
 variable "sort_list1" {
     description     =   "Example of sort function in Terraform"
+    type            =   list(string)
     default         =   ["collabnix", "terraform", "aws", "azure", "gpc"]
 }
 
 variable "sort_list2" {
     description     =   "Example of Slice function in Terraform"
+    type            =   list(string)
     default         =   ["d", "a", "c", "b", ""]
 }
 
 variable "sort_list3" {
     description     =   "Example of Slice function in Terraform"
+    type            =   list(number)
     default         =   [482, 13, 25, 27, 19]
 }
 
@@ -269,6 +286,7 @@ output "sort-outputs" {
 
 variable "map1" {
     description     =   "Example of lookup function in Terraform"
+    type            =   map(string)
     default         =   {
         "Aws"       =   "Best"
         "Azure"     =   "Better"
