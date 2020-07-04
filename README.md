@@ -32,5 +32,6 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 - [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)<br>
 - [Sample Questions](https://learn.hashicorp.com/terraform/certification/terraform-associate-sample-questions)<br>
 
+# Core Contributors
 
 
