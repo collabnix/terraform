@@ -3,7 +3,7 @@
 
 
 
-![My image](https://github.com/collabnix/terraform/blob/master/images/wordle.png)
+![My image](https://raw.githubusercontent.com/collabnix/terraform/master/images/wordle.png)
 
 Terraform Labs brings you tutorials that help you get hands-on experience using Terraform, Kubernetes & Cloud. Here you will find complete documentation of labs and tutorials around Terraform CLI, Configuration Language, sub-commands, providers, Registry and much more..
 
