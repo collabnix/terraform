@@ -44,6 +44,7 @@
 
 ### GCP
 
+- [Setting up Terraform for Google Cloud Platform](https://github.com/collabnix/terraform/blob/master/beginners/gcp/README.md)
 - Terraform vs Google Deployment Manager
 - Launch a Compute Engine Instance
 - Create a New VPC and Public Subnet
