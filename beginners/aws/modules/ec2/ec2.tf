@@ -14,7 +14,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "aws_instance" "webserver" {
+resource "aws_instance" "instance" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
   key_name = var.key_pair_name
