@@ -1,25 +1,27 @@
-How to contribute.
+# How to setup Terraform for  Google Cloud Engine
 
-1. Add a new directory for each new terraform module in order to increase extensibility
 
 ### Pre-requiste
 
 In order to avoid explicitly using the GCP service key, we are going to use GOOGLE_APPLICATION_CREDENTIAL environment variable that points to our GCP service key.
 
-1. Install Terraform ~> 0.12.26
+## Installing Terraform ~> 0.12.26
 
-2. If you have a service key at your disposal <br/>
+If you have a service key at your disposal <br/>
 
-   > export GOOGLE_APPLICATION_CREDENTIAL = {path to your service key file}
+   ```
+   export GOOGLE_APPLICATION_CREDENTIAL = {path to your service key file}
+   ```
 
-3. If you have not created a service account and a service key then follow below steps
+If you have not created a service account and a service key then follow below steps
 
-   - Install gcloud cli
+ ## Install gcloud cli
 
-   The gcloud cli is a part of [Google Cloud SDK](https://cloud.google.com/sdk/docs). We must download and install the SDK on your system and initialize it before you can use the gcloud command-line tool. 
-   Note: You can follow the install script given in the Google Cloud SDK documentation.
+The gcloud cli is a part of [Google Cloud SDK](https://cloud.google.com/sdk/docs). We must download and install the SDK on your system and initialize it before you can use the gcloud command-line tool. 
 
-   Google Cloud SDK Quickstart script for CentOS,
+Note: You can follow the install script given in the Google Cloud SDK documentation.
+
+## Google Cloud SDK Quickstart script for CentOS,
 
    ```
    sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
@@ -34,19 +36,19 @@ In order to avoid explicitly using the GCP service key, we are going to use GOOG
    EOM
    ```
 
-   Then install Google cloud SDK using command,
+ ## Installing Google cloud SDK 
 
    ```
    yum install google-cloud-sdk
    ```
 
-   Once the the SDK is installed, run gcloud init to initialize the SDK,
+ Once the the SDK is installed, run gcloud init to initialize the SDK,
 
    ```
    gcloud init
    ```
 
-   - Run the following scripts
+  ## Run the following scripts
 
    ````bash
    export PROJECT_ID={Name of your GCP Project}
