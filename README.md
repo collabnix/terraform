@@ -9,7 +9,7 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 #  Getting Started in 3 Simple Steps
 
-- Join 3700+ Collabnix Labs Contributors in 2 mins via [Slack](https://join.slack.com/t/collabnix/shared_invite/enQtOTMzNDQzODk2Mjg5LWNlNDU2Y2Y3ZTE2MzAyMGUwOGY4NGQ3N2E4ZjY3MjFiYzFhZjlhNWU5NmY1ZTBiM2NkM2U3NmY1N2NmODliMDk)
+- Join 4000+ Collabnix Labs Contributors in 2 mins via [Slack](https://join.slack.com/t/collabnix/shared_invite/enQtOTMzNDQzODk2Mjg5LWNlNDU2Y2Y3ZTE2MzAyMGUwOGY4NGQ3N2E4ZjY3MjFiYzFhZjlhNWU5NmY1ZTBiM2NkM2U3NmY1N2NmODliMDk)
 
 - Fork, Contribute & Share via [Terraform GITHUB Repository](https://github.com/collabnix/terraform)
 
