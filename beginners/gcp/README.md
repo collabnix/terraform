@@ -21,7 +21,7 @@ The gcloud cli is a part of [Google Cloud SDK](https://cloud.google.com/sdk/docs
 
 Note: You can follow the install script given in the Google Cloud SDK documentation.
 
-## Google Cloud SDK Quickstart script for CentOS,
+## Google Cloud SDK Quickstart script for CentOS
 
    ```
    sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
@@ -42,7 +42,7 @@ Note: You can follow the install script given in the Google Cloud SDK documentat
    yum install google-cloud-sdk
    ```
 
- Once the the SDK is installed, run gcloud init to initialize the SDK,
+ Once the SDK is installed, run gcloud init to initialize the SDK,
 
    ```
    gcloud init
