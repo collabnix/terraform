@@ -12,4 +12,4 @@ Google Deployment Manager:
 2. You can Deploy Marketplace Solutions: User can use images from Google Cloud Marketplace to deploy with Deployment Manager.
 3. You can use Python and Jinja2 Templates: Deployment Manager allows the use of Python and Jinja templates for configuration. This can allow the reuse of common deployments.
 
-![](/images/TerraformVsDeployMgr.jpg)
+![Terraform vs Google Deployment Manager](/images/TerraformVsDeployMgr.jpg)
