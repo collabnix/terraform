@@ -40,7 +40,7 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
   - [Terraform providers](https://github.com/collabnix/terraform/blob/master/beginners/providers/README.md)
   - [Terraform resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/README.md)
   - [Variable Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/variables/README.md)
-  -  [Output Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/output/README.md)
+  - [Output Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/output/README.md)
   - [Terraform CLI](https://github.com/collabnix/terraform/blob/master/beginners/CLI/README.md)
   - [Init-plan-apply !](https://github.com/collabnix/terraform/blob/master/beginners/init-plan-apply/README.md)
 
@@ -48,6 +48,7 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 #### AWS
 
+  - [Deploy your AWS EKS cluster with Terraform](https://github.com/collabnix/terraform/tree/master/beginners/aws/eks)
   - Setting up AWS account credentials 
   - Launch an EC2 instance
   - Create a S3 bucket for storage
@@ -102,7 +103,7 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
   - When to write Terraform Modules
 
 
-## Terrafrom Enterprise (TFE)
+## Terraform Enterprise (TFE)
   - Additional features of TFE
   - Integration of TFE with Github
   - Creating organisation
