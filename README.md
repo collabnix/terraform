@@ -24,7 +24,6 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
    - [Where terraform comes in?](getting-started/terraform.md)
    - [Use cases of Terraform](getting-started/use-cases.md)
 
-- [Beginners Track](./beginners/README.md) 
 
 # Terraform Beginners Track
 
