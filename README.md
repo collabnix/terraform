@@ -19,7 +19,12 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 - [Getting Started: Why, What & How about Terraform?](getting-started/README.md) - In Progress
 
-- [Beginners Track](./beginners/README.md) - In-Progress
+- [Beginners Track](./beginners/README.md) 
+
+   - [The problem of provisioning everything manually](the-problem.md)
+   - [The concept of Infrastructure as a Code (IaC)](iac.md)
+   - [Where terraform comes in?](terraform.md)
+   - [Use cases of Terraform](use-cases.md)
 
 - [Intermediate Track](./intermediate/README.md) - In-Progress
 
