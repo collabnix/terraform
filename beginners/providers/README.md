@@ -41,6 +41,10 @@ provider "aws" {
 ### Environment variables
 This method provide another way to specify configuration options and credentials. The following examples show how you can configure environment variables for the default user.
 
+```
+provider "aws" {}
+```
+
 **Linux or Mac:**
 ```
 export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
