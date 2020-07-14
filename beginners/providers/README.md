@@ -33,8 +33,8 @@ Using this method, you can pass the AWS **access_key** ID and **secret_key** wit
 ```
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIAIOSFODNN7EXAMPLE"
-  secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+  access_key = "AKIAXXXXXMPLE"
+  secret_key = "wJalrXUtnXXXXXXXXKEY"
 }
 ```
 
@@ -47,8 +47,8 @@ provider "aws" {}
 
 **Linux or Mac:**
 ```
-export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+export AWS_ACCESS_KEY_ID=AKXXXXXXXE
+export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/XXXXXXbPxRfiCYEXAMPLEKEY
 export AWS_DEFAULT_REGION=ap-south-1
 ```
 
