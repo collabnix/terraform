@@ -63,6 +63,6 @@ If you have [configured AWS CLI](https://docs.aws.amazon.com/cli/latest/userguid
 ```
 provider "aws" {
   region                  = "ap-south-1"
-  shared_credentials_file = "/home/tf_user/.aws/creds"
+  shared_credentials_file = "/home/tf_user/creds"
 }
 ```
