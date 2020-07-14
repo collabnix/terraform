@@ -1,7 +1,7 @@
 # Terraform Providers
-Terraform uses a single provider, or multiple providers, to establish a connection to any services like IaaS, PaaS, or SaaS and provision resources. The provider is the first thing you need to set up before you can start creating resources for the vendor the provider is designed for.
+In general, providers that are implemented as plugins(single binary) and the plugins/providers are the things that talk to the upstream APIs to make changes to the real infrastructure. Terraform uses a single provider, or multiple providers, to establish a connection to any services like IaaS, PaaS, or SaaS and provision resources. The provider is the first thing you need to set up before you can start creating resources for the vendor the provider is designed for.
 
-As an example, the AWS provider is designed to allow you to provision AWS resources, such as EC2 Instances or Security groups, against your AWS account. Without first declaring the provider, Terraform does not know about your account details, region, the security profile to use, and so on.
+We will take infrastructure provider AWS as an example here. The AWS provider is designed to allow you to provision AWS resources, such as EC2 Instances or Security groups, against your AWS account. Without first declaring the provider, Terraform does not know about your account details, region, the security profile to use, and so on.
 
 Terraform’s documentation on providers can be found here:
 
