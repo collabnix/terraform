@@ -2,7 +2,7 @@
 
 Resource are the daily bread of Terraform. They illustrate the infrastructure pieces that you want to manage such as networks, servers, firewalls, etc. The `resource` object is constructed of a provider-name_resource-type, local identifier and the block containing the configuration of the resource. This would be better understood with the below diagram.
 
-<img src="https://github.com/Raviadonis/terraform-1/blob/master/images/Terraform_Resource_definition.png" width="640">
+<img src="https://github.com/Raviadonis/terraform-1/blob/master/images/Terraform_Resource_definition.png" width="640" align="center">
 
 All the resources are linked to a provider. From the above diagram, **`aws_instance`** indicates that this resource type is provided by the `aws` provider. Next is the local identifier name for the resource, which is specified by you, here we have named as `web` so that we can reference it elsewhere and Terraform keep track of it in the `.tfstate` file. Concept of `state` file will be covered in the upcoming tracks.
 
