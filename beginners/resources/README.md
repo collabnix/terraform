@@ -41,4 +41,4 @@ From the above, we are creating a single EC2 instance, EBS volume, and attaching
 <p align="center">
 <img src="https://github.com/Raviadonis/terraform-1/blob/master/images/Terraform_Resource_Identifier.png" width="640">
 </p>
-Now terraform has enough information to take the necessary action. Here the `id` attributes are accessed using the dot-separated notation, like `aws_instance.collabnix_node.id`.
+Now terraform has enough information to take the necessary action. Here the `id` attributes are accessed using the dot-separated notation, like `aws_instance.collabnix_node.id`
