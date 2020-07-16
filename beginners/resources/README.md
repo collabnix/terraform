@@ -51,7 +51,7 @@ From the above, we are creating a single EC2 instance, EBS volume, and attaching
 Now terraform has enough information to take the necessary action. Here the `id` attributes are accessed using the dot-separated notation, like `aws_instance.collabnix_node.id`. Each type of resource will export thier own set of attribute values. Here, for example we used the `id` attribute. Refer this link for more details ([Attribute reference](https://www.terraform.io/docs/providers/aws/r/instance.html#attributes-reference))
 
 ### Data sources:
-These are very similar to regular [resource](https://github.com/Raviadonis/terraform-1/blob/master/beginners/resources/README.md###Resource) object which represents a piece of read-only information that can be fetched from the `provider` (here it is AWS) or from an [external](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/data_source) data source. This cannot be used for any operations like CREATE, UPDATE, or DELETE. Instead, they can only return several informations (meta-data) like AMI ID, Private IP, Instance ID and so on from an existing resources.
+These are very similar to regular [resource](https://github.com/Raviadonis/terraform-1/blob/master/beginners/resources/README.md#resource) object which represents a piece of read-only information that can be fetched from the `provider` (here it is AWS) or from an [external](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/data_source) data source. This cannot be used for any operations like CREATE, UPDATE, or DELETE. Instead, they can only return several informations (meta-data) like AMI ID, Private IP, Instance ID and so on from an existing resources.
 
 ```hcl
 data "aws_ami" "app-ami" { 
