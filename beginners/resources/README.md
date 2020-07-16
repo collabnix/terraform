@@ -38,9 +38,7 @@ resource "aws_volume_attachment" "collabnix_vol_attachment" {
 ```
 
 From the above, we are creating a single EC2 instance, EBS volume, and attaching that volume to the instance. The first two resource blocks (EC2 instance & EBS volume) will be created independently. While trying to attach the volume to the instance, Terraform requires IDs of instance and volume to be attached. In this case you need to refer the local identifier name and the required attributes of the resources. See the below diagram for better understanding:
-
 <p align="center">
 <img src="https://github.com/Raviadonis/terraform-1/blob/master/images/Terraform_Resource_Identifier.png" width="750">
 </p>
-
 Now terraform has enough information to take the necessary action. Here the `id` attributes are accessed using the dot-separated notation, like `aws_instance.collabnix_node.id`.
