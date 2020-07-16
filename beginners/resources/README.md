@@ -1,6 +1,11 @@
 # Terraform Resources
+## Component or Object
+Terraform has two different type of component/object
+- `resource`
+- `data`
 
-Resource are the daily bread of Terraform. They illustrate the infrastructure pieces that you want to manage such as networks, servers, firewalls, etc. The `resource` object is constructed of a provider-name_resource-type, local identifier and the block containing the configuration of the resource. This would be better understood with the below diagram.
+### Resource:
+Resource are the daily bread of Terraform. They illustrate the infrastructure pieces that you want to manage such as networks, servers, firewalls, etc. Terraform will use the cloud provider APIs to perform the create, read, update, and delete(CRUD) operations. The `resource` object is constructed of a provider-name_resource-type, local identifier and the block containing the configuration of the resource. This would be better understood with the below diagram.
 
 <p align="center">
 <img src="https://github.com/Raviadonis/terraform-1/blob/master/images/Terraform_Resource_definition.png" width="640">
@@ -13,8 +18,8 @@ See the below example code for the resource creation and how it is referenced to
 ```hcl
 resource "aws_instance" "collabnix_node" {
  ami               = "ami-21f78e11"
- availability_zone = "${var.availability_zone}"
- instance_type     = "${var.instance_type}"
+ availability_zone = var.availability_zone
+ instance_type     = var.instance_type
 
  tags {
    Name = "Collabnix_terraform"
@@ -43,4 +48,60 @@ From the above, we are creating a single EC2 instance, EBS volume, and attaching
 <img src="https://github.com/Raviadonis/terraform-1/blob/master/images/Terraform_Resource_Identifier.png" width="640">
 </p>
 
-Now terraform has enough information to take the necessary action. Here the `id` attributes are accessed using the dot-separated notation, like `aws_instance.collabnix_node.id`.
+Now terraform has enough information to take the necessary action. Here the `id` attributes are accessed using the dot-separated notation, like `aws_instance.collabnix_node.id`. Each type of resource will export thier own set of attribute values. Here, for example we used the `id` attribute. Refer this link for more details ([Attribute reference](https://www.terraform.io/docs/providers/aws/r/instance.html#attributes-reference))
+
+### Data sources:
+These are very similar to regular [resource](https://github.com/Raviadonis/terraform-1/blob/master/beginners/resources/README.md###Resource) object which represents a piece of read-only information that can be fetched from the `provider` (here it is AWS) or from an [external](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/data_source) data source. This cannot be used for any operations like CREATE, UPDATE, or DELETE. Instead, they can only return several informations (meta-data) like AMI ID, Private IP, Instance ID and so on from an existing resources.
+
+```hcl
+data "aws_ami" "app-ami" { 
+  most_recent = true 
+  owners = ["self"] 
+} 
+ 
+resource "aws_instance" "community" {
+  ami           = data.aws_ami.app-ami.id
+  instance_type = "t2.micro"
+  tags = {
+    Name = "Collabnix"
+  }
+}
+```
+From the above example code, we are creating an EC2 instance by using the existing AMI ID. Let's assume we have already created an AMI manually or with a different set of tools like `Packer`. Now terraform needs AMI-ID to create an instance and it fetches the ID from the data source `app-ami`.
+
+**Note:**
+The combination of resource type and the local identifier name must be unique in your configuration. The below configuration 
+will through an error like:
+`aws_instance.collabnix_node: resource repeated multiple times`
+
+```hcl
+resource "aws_instance" "collabnix_node" {
+ ami               = "ami-21f78e11"
+ instance_type     = var.instance_type
+}
+
+resource "aws_instance" "collabnix_node" {
+ ami               = "ami-21f78e11"
+ instance_type     = var.instance_type
+}
+```
+
+## Arguments
+
+This is just a syntax of assining the vaules within the configuration blocks. It looks like the below
+```hcl
+resource "aws_instance" "collabnix_node" {
+ ami               = "ami-21f78e11"          # <IDENTIFIER> = <EXPRESSION>
+ instance_type     = var.instance_type
+}
+```
+Each type of resources will have the list of supported arguments (required and optional) you can consume within your configuration blocks.
+
+Morover, you can also use the special kind of arguments called [meta-arguments](https://www.terraform.io/docs/configuration/resources.html#meta-arguments) within any type of resource. Primarily, these meta-arguments are used to change the behavior of the resource. See the list of meta-arguments below
+- `depends_on`
+- `count`
+- `for_each`
+- `provider`
+- `lifecycle`
+- `provisioner`
+- `connection`
