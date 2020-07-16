@@ -105,3 +105,24 @@ Morover, you can also use the special kind of arguments called [meta-arguments](
 - `lifecycle`
 - `provisioner`
 - `connection`
+
+```hcl
+resource "aws_instance" "collabnix_node" {
+  depends_on        = [aws_s3_bucket.collabnix_bucket]
+  count             = 2
+  ami               = "ami-21f78e11"
+  instance_type     = var.instance_type
+}
+
+resource "aws_s3_bucket" "collabnix_bucket" {
+  bucket = "lab-bucket"
+  acl = "private"
+  versioning {
+    enabled = true
+  }
+  tags {
+    Name = "test-s3-terraform-bucket"
+  }
+}
+```
+The above configuration blocks are just an example of how the meta-arguments can be used. Please do not go deeper and try to understand how it works in this beginner track.
