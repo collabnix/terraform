@@ -47,15 +47,15 @@ provider "aws" {}
 
 **Linux or Mac:**
 ```bash
-export AWS_ACCESS_KEY_ID=AKXXXXXXXE
-export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/XXXXXXbPxRfiCYEXAMPLEKEY
+export AWS_ACCESS_KEY_ID=AKIAXXXXXMPLE
+export AWS_SECRET_ACCESS_KEY=wJalrXUtnXXXXXXXXKEY
 export AWS_DEFAULT_REGION=ap-south-1
 ```
 
 **Windows PowerShell:**
 ```powershell
-$Env:AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
-$Env:AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+$Env:AWS_ACCESS_KEY_ID="AKIAXXXXXMPLE"
+$Env:AWS_SECRET_ACCESS_KEY="wJalrXUtnXXXXXXXXKEY"
 $Env:AWS_DEFAULT_REGION="ap-south-1"
 ```
 Once you have exported the keys, you can run the terraform commands.
