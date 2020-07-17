@@ -11,7 +11,7 @@ Terraform’s documentation on providers can be found here:
 We will focus on AWS for example. We’ll need to configure an AWS provider with our region, at minimum.
 A simple version of the AWS provider looks like this:
 
-```
+```hcl
 provider "aws" {
   region = "ap-south-1"
 }
@@ -30,7 +30,7 @@ AWS provider offers a different ways of passing credentials for authentication a
 
 Using this method, you can pass the AWS **access_key** ID and **secret_key** within the provider code block as an argument.
 
-```
+```hcl
 provider "aws" {
   region     = "ap-south-1"
   access_key = "AKIAXXXXXMPLE"
@@ -41,7 +41,7 @@ provider "aws" {
 ### Environment variables
 This method provide another way to specify configuration options and credentials. The following examples show how you can configure environment variables for the default user.
 
-```
+```hcl
 provider "aws" {}
 ```
 
@@ -64,7 +64,7 @@ Once you have exported the keys, you can run the terraform commands.
 ### Shared credentials file
 If you have [configured AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) on your system earlier, credentials and default region informations will be stored in a plain-text under the default location of user's home directory `$HOME/.aws/credentials`. Terraform will check this location for the credentials. Optionally you can specify a different custom location by providing the `shared_credentials_file` argument
 
-```
+```hcl
 provider "aws" {
   region                  = "ap-south-1"
   shared_credentials_file = "/home/tf_user/creds"
