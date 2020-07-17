@@ -39,8 +39,8 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 ## From Terraform INIT To APPLY
 
-  - [Terraform providers](https://github.com/Raviadonis/terraform-1/blob/master/beginners/providers/Terraform_Providers.md)
-  - [Terraform resources](https://github.com/Raviadonis/terraform-1/blob/master/beginners/resources/Terraform_Resources.md)
+  - [Terraform providers](https://github.com/collabnix/terraform/blob/master/beginners/providers/Terraform_Providers.md)
+  - [Terraform resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/Terraform_Resources.md)
   - [Variable Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/variables/README.md)
   - [Output Resources](https://github.com/collabnix/terraform/blob/master/beginners/resources/output/README.md)
   - [Terraform CLI](https://github.com/collabnix/terraform/blob/master/beginners/CLI/README.md)
