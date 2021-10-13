@@ -23,8 +23,8 @@ module "collabnix_application_load_balancer" {
   source = "./modules/application_load_balancer"
 }
   
-module "collabnix_API_Gateway & Cloudwatch" {
-  source = "./API_Gateway & Cloudwatch"
+module "collabnix_API_Gateway_Cloudwatch" {
+  source = "./modules/API_Gateway & Cloudwatch"
 }
   
   
