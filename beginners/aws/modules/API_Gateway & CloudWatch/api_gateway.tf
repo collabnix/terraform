@@ -124,4 +124,3 @@ resource "aws_api_gateway_stage" "panda" {
   stage_name    = "panda"
 }
 
-

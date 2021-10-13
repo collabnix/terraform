@@ -14,6 +14,6 @@ For example:
 
 ```tf
 $ git clone https://github.com/collabnix/terraform.git
-$ cd terraform/beginner/aws/modules/application_load_balancer
+$ cd terraform/beginner/aws/modules/API_Gateway & CloudWatch
 $ terraform apply
 ```

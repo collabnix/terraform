@@ -18,3 +18,13 @@ module "collabnix_static_s3_website" {
   aws_profile_name = "{profile_name}"
   document_directory = "./modules/s3/"
 }
+  
+module "collabnix_application_load_balancer" {
+  source = "./modules/application_load_balancer"
+}
+  
+module "collabnix_API_Gateway_Cloudwatch" {
+  source = "./modules/API_Gateway & Cloudwatch"
+}
+  
+  
