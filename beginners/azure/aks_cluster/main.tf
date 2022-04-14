@@ -18,7 +18,7 @@ provider "azurerm" {
 resource "random_string" "log_analytics_sufix" {
     length = 5
     lower = true
-    special = false
+    special = true
     number = false
 }
 
