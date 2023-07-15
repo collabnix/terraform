@@ -32,3 +32,14 @@ Please note that this overview assumes you have some familiarity with Terraform 
 - Run terraform init to initialize your Terraform project.
 - Run terraform plan to verify the changes and ensure the configuration is correct.
 - Run terraform apply to create the RDS instance and implement the restore strategy.
+
+## Getting Started
+
+To create the RDS instance and implement the restore strategy, follow these steps:
+
+- Install Terraform on your local machine.
+- Create a new directory for your Terraform project and place the main.tf and restore.tf files inside it.
+- Initialize the project by running terraform init in the project directory.
+- Review the Terraform plan by running terraform plan. It will show you the changes that Terraform will apply.
+- Apply the changes by running terraform apply. Terraform will create the RDS instance and implement the restore strategy using the specified snapshot.
+- Once the apply is complete, you should have your RDS instance created and the restore strategy implemented.
