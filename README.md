@@ -127,4 +127,4 @@ Terraform Labs brings you tutorials that help you get hands-on experience using 
 
 # Core Contributors
 
-
+#Beginner Friendly and I am loving it
