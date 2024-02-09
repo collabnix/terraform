@@ -16,7 +16,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_instance" "instance" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
   key_name = var.key_pair_name
 
   network_interface {
@@ -27,5 +27,6 @@ resource "aws_instance" "instance" {
   tags = {
     project = "Collabnix"
     department = "Automation"
+    Name = "myinstance"
   }
 }

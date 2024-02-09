@@ -5,3 +5,7 @@ variable "key_pair_name" {
    type        =   string
    default = "keypair"
 }
+
+variable "instance_type" {
+   default = "t2.micro"
+}
