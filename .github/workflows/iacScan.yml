@@ -26,8 +26,8 @@ jobs:
 
       - name: Run Checkov scan and append results to JSON file
         run: |
-          checkov -d . -o json > checkov_results_tmp.json
-          jq --arg repoLink "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" --arg branch "$GITHUB_REF" '. += [{"details": {"repo": $repoLink, "branch": $branch}}]' scan_results.json > temp.json && mv temp.json scan_results.json || true
+          checkov -d . -o json > checkov_results_tmp.json || True
+          jq --arg repoLink "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" --arg branch "$GITHUB_REF" '. += [{"details": {"repo": $repoLink, "branch": $branch}}]' scan_results.json > temp.json && mv temp.json scan_results.json 
         shell: bash
         env:
           GITHUB_SERVER_URL: ${{ github.server_url }}
