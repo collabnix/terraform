@@ -40,5 +40,4 @@ jobs:
 
       - name: Remove temporary files
         run: |
-          rm temp.json
           rm scan_results.json
