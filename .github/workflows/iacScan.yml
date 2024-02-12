@@ -1,0 +1,43 @@
+name: Checkov Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  checkov_scan:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_SERVER_URL: ${{ github.server_url }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_REF: ${{ github.ref }}
+      CSPM_URL: 5aea-122-161-52-20.ngrok-free.app
+      CSPM_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MzMzNTAwLCJqdGkiOiIwN2Q2NjE4OTUxMTA0ODA4YjI1MzIxN2I4NWQ4MTcwZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJ9.lHIWO0UfpefgZ7mzw0LE-rXGl5Mm7bCvPMwwxU9qq2g
+      TENANT_ID: "1"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Checkov
+        run: pip install checkov
+
+      - name: Run Checkov scan and append results to JSON file
+        run: |
+          checkov -d . -o json > checkov_results_tmp.json
+          jq --arg repoLink "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" --arg branch "$GITHUB_REF" '. += [{"details": {"repo": $repoLink, "branch": $branch}}]' scan_results.json > temp.json && mv temp.json scan_results.json
+        shell: bash
+        env:
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF: ${{ github.ref }}
+
+      - name: Push report to CSPM panel
+        run: |
+          curl --location --request POST "https://${CSPM_URL}/api/v1/artifact/?tenant_id=${TENANT_ID}&data_type=IAC&save_to_s3=false" --header "Authorization: Bearer ${CSPM_TOKEN}" --form "file=@\"./scan_results.json\""
+
+      - name: Remove temporary files
+        run: |
+          rm checkov_results_tmp.json
