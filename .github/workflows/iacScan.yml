@@ -12,7 +12,7 @@ jobs:
     env:
       GITHUB_SERVER_URL: ${{ github.server_url }}
       GITHUB_REPOSITORY: ${{ github.repository }}
-      GITHUB_REF: ${{ gihub.head_ref }}
+      GITHUB_REF: ${{ github.head_ref }}
       CSPM_URL: 5aea-122-161-52-20.ngrok-free.app
       CSPM_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MzMzNTAwLCJqdGkiOiIwN2Q2NjE4OTUxMTA0ODA4YjI1MzIxN2I4NWQ4MTcwZCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCJ9.lHIWO0UfpefgZ7mzw0LE-rXGl5Mm7bCvPMwwxU9qq2g
       TENANT_ID: "1"
@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_SERVER_URL: ${{ github.server_url }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_REF: ${{ gihub.head_ref }}
+          GITHUB_REF: ${{ github.head_ref }}
 
       - name: Push report to CSPM panel
         run: |
